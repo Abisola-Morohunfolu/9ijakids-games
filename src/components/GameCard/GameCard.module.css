@@ -1,0 +1,58 @@
+.GameCard {
+	width: 25%;
+	min-width: 20vw;
+	margin: 0 3rem;
+	margin-bottom: 4.5rem;
+	overflow: hidden;
+	border-radius: 5px;
+	box-shadow: 2px 8px 10px rgba(114, 78, 78, 0.2);
+	transition: all 0.3s ease-in-out;
+	cursor: pointer;
+	/* border: 1px solid rgba(0, 0, 0, 0.3); */
+}
+
+.GameCard:hover {
+	transform: translateY(-5px);
+}
+
+.GameImageContainer {
+	height: 30rem;
+}
+
+.GameImage {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+.GameTextContainer {
+	padding: 1.5rem 1rem;
+}
+
+.GameTitle {
+	font-size: 2rem;
+	color: #64a547;
+}
+
+.GameDescription {
+	font-size: 1.4rem;
+}
+
+@media only screen and (max-width: 50em) {
+	.GameCard {
+		width: 40%;
+	}
+	.GameImageContainer {
+		height: 20rem;
+	}
+}
+
+@media only screen and (max-width: 37.5em) {
+	.GameCard {
+		width: 90%;
+	}
+
+	.GameImageContainer {
+		width: 100%;
+	}
+}

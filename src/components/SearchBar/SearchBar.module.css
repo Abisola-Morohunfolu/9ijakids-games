@@ -1,0 +1,32 @@
+.SearchBar {
+	/* width: max-content; */
+	display: flex;
+	flex-direction: column;
+	font-size: 1.6rem;
+}
+
+.SearchInput {
+	padding: 1.5rem 1rem;
+	border: none;
+	background-color: rgba(0, 0, 0, 0.05);
+	font-family: inherit;
+	width: 25rem;
+	display: block;
+}
+
+.SearchInput:focus {
+	outline: none;
+}
+
+@media only screen and (max-width: 50em) {
+	.SearchInput {
+		width: 20rem;
+	}
+}
+
+@media only screen and (max-width: 37.5em) {
+	.SearchInput {
+		width: 100%;
+		padding: 2rem 2.5rem;
+	}
+}
